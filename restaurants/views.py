@@ -42,7 +42,7 @@ def restaurant_update(request, restaurant_id):
         "form":form,
         "restaurant": article_obj
         }
-    return render(request, 'create.html', context)
+    return render(request, 'update.html', context)
 
 
  

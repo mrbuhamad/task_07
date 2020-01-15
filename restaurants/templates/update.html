@@ -1,10 +1,14 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Update</title>
+        <title>Create</title>
     </head>
     <body>
-
+        <form action="{% url 'restaurant-update' restaurant.id %}" method="POST">
+            {% csrf_token %}
+            {{form.as_p}}
+            <input type="submit" value="Create">
+        </form>
     </body>
 </html>
